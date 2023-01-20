@@ -12,6 +12,8 @@
 		ACE60622297ADB2E0074F5F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE60621297ADB2E0074F5F5 /* ViewController.swift */; };
 		ACE60627297ADB300074F5F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACE60626297ADB300074F5F5 /* Assets.xcassets */; };
 		ACE6062A297ADB300074F5F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACE60628297ADB300074F5F5 /* LaunchScreen.storyboard */; };
+		ACE60633297AFFAA0074F5F5 /* MPB.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE60632297AFFAA0074F5F5 /* MPB.swift */; };
+		ACE60639297B39F70074F5F5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = ACE60638297B39F70074F5F5 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,7 @@
 		ACE60626297ADB300074F5F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACE60629297ADB300074F5F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACE6062B297ADB300074F5F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACE60632297AFFAA0074F5F5 /* MPB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPB.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACE60639297B39F70074F5F5 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +64,7 @@
 				ACE60626297ADB300074F5F5 /* Assets.xcassets */,
 				ACE60628297ADB300074F5F5 /* LaunchScreen.storyboard */,
 				ACE6062B297ADB300074F5F5 /* Info.plist */,
+				ACE60632297AFFAA0074F5F5 /* MPB.swift */,
 			);
 			path = MPBSDK;
 			sourceTree = "<group>";
@@ -80,6 +85,9 @@
 			dependencies = (
 			);
 			name = MPBSDK;
+			packageProductDependencies = (
+				ACE60638297B39F70074F5F5 /* SnapKit */,
+			);
 			productName = MPBSDK;
 			productReference = ACE6061A297ADB2E0074F5F5 /* MPBSDK.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +116,9 @@
 				Base,
 			);
 			mainGroup = ACE60611297ADB2E0074F5F5;
+			packageReferences = (
+				ACE60637297B39F70074F5F5 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = ACE6061B297ADB2E0074F5F5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +148,7 @@
 				ACE60622297ADB2E0074F5F5 /* ViewController.swift in Sources */,
 				ACE6061E297ADB2E0074F5F5 /* AppDelegate.swift in Sources */,
 				ACE60620297ADB2E0074F5F5 /* SceneDelegate.swift in Sources */,
+				ACE60633297AFFAA0074F5F5 /* MPB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +362,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ACE60637297B39F70074F5F5 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ACE60638297B39F70074F5F5 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ACE60637297B39F70074F5F5 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ACE60612297ADB2E0074F5F5 /* Project object */;
 }
